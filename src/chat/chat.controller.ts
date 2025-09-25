@@ -5,9 +5,12 @@ import { ChatService } from './chat.service';
 export class ChatController {
   constructor(private readonly chatService: ChatService) {}
 
-  // handle chat requests
   @Post()
-  async chat(@Body('query') query: string) {
-    return this.chatService.chat(query);
+  async chat(
+    @Body('query') query: string,
+    @Body('userId') userId: number,
+    @Body('history') history: { type: string; text: string }[],
+  ) {
+    return this.chatService.chat(query, userId, history);
   }
 }

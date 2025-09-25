@@ -1,13 +1,12 @@
 import { Module } from '@nestjs/common';
-import { ChatService } from './chat.service';
 import { ChatController } from './chat.controller';
+import { ChatService } from './chat.service';
 import { EmbeddingModule } from '../embedding/embedding.module';
+import { CreditsModule } from '../credits/credits.module';
 
 @Module({
-  imports: [EmbeddingModule],
-  // chat controller
+  imports: [EmbeddingModule, CreditsModule],
   controllers: [ChatController],
-  // chat service
   providers: [ChatService],
 })
 export class ChatModule {}
