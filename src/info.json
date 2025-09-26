@@ -5,8 +5,9 @@
   "school": {
     "name": "Yeshua High School",
     "principal": "Mrs. Ariyo",
+    "Executive Director": "Mrs. Simisola Adigun",
     "quality_assurance_manager": "Mr. Dada",
-    "director": "Pastor Timi",
+    "director": "Mr. Timileyin Adigun",
     "school_number": "+234 000 000 000"
   },
   "values": {
@@ -49,6 +50,10 @@
     {
       "topic": "discipline",
       "info": "Remind students to maintain discipline, punctuality, respect, and obedience in line with Christian values. If asked repeatedly, loop the reminder with emphasis on Godly living and school rules."
+    },
+    {
+      "topic": "Facts",
+      "info": "Answer Fast on facts clearly and give relatable guides to the facts clearly do not overwhelme with information, be the official fact guides to respond any questions clearly.", 
     },
     {
       "topic": "trash_talk",
