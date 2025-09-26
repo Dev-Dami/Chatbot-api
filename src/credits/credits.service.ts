@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 export class CreditsService {
   private userCredits = new Map<number, { credits: number; lastReset: Date }>();
 
-  private readonly MAX_CREDITS = 4;
+  private readonly MAX_CREDITS = 8;
 
   getCredits(userId: number): number {
     this.ensureUser(userId);
